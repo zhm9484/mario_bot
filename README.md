@@ -28,9 +28,19 @@ A bot plays [gym-super-mario-bros](https://github.com/Kautenja/gym-super-mario-b
 
 * Hack [gym-super-mario-bros](https://github.com/Kautenja/gym-super-mario-bros) package.
 
-    ``` shell
-    cp hack/smb_env.py $(dirname $(python -c "import gym_super_mario_bros; print(gym_super_mario_bros.__file__)"))
-    ```
+    * OSX or Linux
+    
+        ``` shell
+        cp hack/smb_env.py $(dirname $(python -c "import gym_super_mario_bros; print(gym_super_mario_bros.__file__)"))
+        ```
+    
+    * Windows
+    
+        ``` shell
+        python -c "import gym_super_mario_bros; import os; print(os.path.dirname(gym_super_mario_bros.__file__))"
+        ```
+        
+        Copy ``hack/smb_env.py`` to the folder which command above prints out.
 
 ## How To Run
 
