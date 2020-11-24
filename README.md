@@ -26,6 +26,12 @@ A bot plays [gym-super-mario-bros](https://github.com/Kautenja/gym-super-mario-b
         pip install torch==1.2.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
         ```
 
+* Hack [gym-super-mario-bros](https://github.com/Kautenja/gym-super-mario-bros) package.
+
+    ``` shell
+    cp hack/smb_env.py $(dirname $(python -c "import gym_super_mario_bros; print(gym_super_mario_bros.__file__)"))
+    ```
+
 ## How To Run
 
 ```shell
